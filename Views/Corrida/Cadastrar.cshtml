@@ -1,0 +1,15 @@
+﻿@model  Corrida
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+<mensagem texto="@TempData["mensagem"]"></mensagem>
+
+<form asp-action="Cadastrar" asp-controller="Corrida">
+    <partial name="_formulario"/>
+    <input type="submit" class="btn btn-primary" value="Cadastrar" />
+</form>
+
